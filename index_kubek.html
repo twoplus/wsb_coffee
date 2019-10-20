@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kubek z kawą</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        :root {
+          --body-bg: #7391d4;
+          --dark-txt-color: #06699e;
+          --light-txt-color: #f5f6fa;
+          --blood-bg: #e02356;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: var(--body-bg);
+        }
+        .main {
+            width: 100vw;
+        }
+        .main > div{
+            display: block;
+            width: 50%;
+            height: 80vh;
+            float: left;
+           
+            color: var(--light-txt-color);
+        }
+        .aside {
+            padding: 150px 20px 20px 20px;
+        }
+        .main > div, .footer {
+            box-sizing: border-box;
+        }
+        h1, p {
+            font-family: 'Anton', sans-serif;
+        }
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+            margin: 25%;
+        }
+        a {
+            display: block;
+            width: 80px;
+            background-color: var(--blood-bg);
+            color: var(--light-txt-color);
+            text-decoration: none;
+            padding: 5px;
+            text-align: center;
+            border-radius: 25px;
+            border: 2px solid var(--light-txt-color);
+            position: relative;
+            margin-top: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .footer {
+            height: 20vh;
+            clear: both;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .footer > div {
+            background-color: #c3d3f7;
+        }
+        ul > li {
+          display: inline-block;
+          list-style: none;
+          left: 0px;
+          line-height: 50px;
+          color: #06699e;
+          padding: 0px 10px;
+          text-align: center;
+          cursor: pointer;
+        }
+        ul > li:hover {
+            color: var(--light-txt-color);
+            background-color: var(--dark-txt-color);
+        }
+        ul {
+            padding: 0px 25%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="main">
+        <div>
+            <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c549.png" alt="coffee mug">
+        </div><!--
+     --><div class="aside">
+         <h1>Kodowanie, Kawa i Ciastka.</h1>
+          <p>Spotkania ludzi uczących się programowania</p>
+          <a href="#" class="bttn">Zapisz się</a> 
+     </div>
+    </div>
+    <div class="footer">
+        <div>
+           <ul>
+                <li>Strona Główna</li>
+                <li>Wydarzenia</li>
+                <li>Blog</li>
+           </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
